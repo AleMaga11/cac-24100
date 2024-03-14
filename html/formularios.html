@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="icon" type="image/png" sizes="16x16"  href="../imgs/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<section>
+    <form action="https://www.google.com.ar">
+      <input type="search" name="q">  
+<button>
+     Buscar
+</button>
+    </form>
+    </section>    
+    
+      <h1>Formularios</h1>
+    <form method="get">
+        <div>
+            <label for="nombre">Nombre:</label>
+          <input id="nombre"
+                 name="nombre">
+          <label for="apellido">Apellido:</label>
+          <input id="apellido"
+                  name="apellido">
+        </div>
+        <hr>
+
+        <div>
+            <label>Edad:</label>
+            <input type="number"
+            min="0"
+            max="120"
+            name="fechanac">
+        </div>
+<hr>
+<div>
+<label>Fecha de Nacimiento:</label>
+<input type="date"
+       name="date">
+</div>
+<hr>
+    <div>
+         <span>TURNO:</span>
+        <div>
+           <input type="radio"
+           name="turno"
+           value="manana"
+           checked>
+           Mañana
+           <input type="radio"
+           name="turno"
+           value="Tarde">
+           Tarde
+        </div>
+    </div>
+    <hr>
+    <div>
+       <label>ESTUDIOS:</label>
+       <span>Primaria </span>
+       <input type="checkbox"
+       value="pri"
+       checked>
+       <span>Secundaria</span>
+       <input type="checkbox"
+       value="sec"
+       checked>
+       <span>Terciario</span>
+       <input type="checkbox"
+       value="ter">
+    </div>
+    <br>
+    <div>
+        <label>Nacionalidad</label>
+        <select  id="nacionalidad"
+        name="nacionalidad">
+            <option value="1"selected>Arg</option>
+            <option value="2"selected>Bra</option>
+            <option value="3"selected>Uru</option>
+            <option value="4"selected>Bol</option>
+        </select>
+    </div>
+    <hr>
+    <div>
+        <label>Datos adicionales</label>
+        <div>
+            <textarea id="datosadicionales"
+            name="datosadicionales"
+            cols="50"
+            rows="5"></textarea>
+        </div>
+    </div>
+    <div>
+        <label>CV</label>
+        <div>
+            <input type="file">
+        </div>
+    </div>
+    <br>
+    <button>
+        Enviar
+    </button>
+    <button type="reset">
+    Limpiar
+    </button>
+
+    </form>
+</section>
+
+<section>
+<h2>Login</h2>
+<form>
+    <label>Usuario</label>
+    <input type="text" required>
+    <label>Password</label>
+    <input type="password">
+    <button>
+        Loging
+    </button>    
+</form>    
+</section>
+<section>
+    <h2>Reset Password</h2>
+    <form>
+        <label>Email*</label>
+        <input type="email" required>
+        <button>
+            Reset
+        </button>    
+    </form>    
+    </section>
+
+<form>
+    <h3>Buscar</h3>
+    <input type="search">
+    <button>
+        Buscar
+    </button>
+    <br>
+    <br>
+    <a href="../index.html">Volver</a>
+</body>
+</html>
